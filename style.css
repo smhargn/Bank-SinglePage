@@ -1,0 +1,512 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Josefin Sans;
+    background-color: #fff9db;
+    color: #3E3A2E;
+    
+}
+
+.container {
+    max-width: 120rem;
+    height: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 8fr 2fr;
+}
+
+.header-top {
+    border: 14px solid #fcc419;
+    margin-bottom: 8px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    background-color: #fff3bf;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: #f59f00;
+}
+
+.slogan {
+    font-family: Bebas Neue;
+    font-size: 96px;
+}
+
+/********/
+
+/* MAIN */
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+}
+
+.currency {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.money, .money * {
+    transition: background-color 0.1s ease;
+}
+
+.money:hover, .money:hover * { 
+    background-color: #f59f00;
+}
+
+
+.money {
+    border: 2px solid #fcc419;
+    border-radius: 8px;
+    margin: 12px 12px 36px 12px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    
+}
+
+
+
+.personal-info {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personal-activity h3 {
+    text-align: center;
+}
+
+.personal-icon {
+    width: 36px;
+    height: 36px;
+
+}
+
+.personal-name {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 12px; 
+    border: 2px solid #fcc419;
+    border-radius: 4px;
+    text-align: center;
+    padding: 12px;
+}
+
+.personal-tab {
+    border-radius: 8px;
+    padding: 24px;
+    margin: 24px;
+    border: 2px solid #fcc419;
+}
+
+.balance {
+    border: 2px solid #fcc419;
+    padding: 8px;
+    text-align: center;
+}
+
+.personal-balance {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.balance {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.info {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.btn-read {
+    
+    display: inline-block;
+    margin-top: 24px;
+    background-color: #fff3bf;
+    transition: background-color 0.3s ease;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.btn-read:hover {
+    background-color: #f59f00;
+}
+
+
+
+.info h2 {
+    font-size: 64px;
+    text-align: center;
+    padding: 8px;
+}
+
+
+.shortcuts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    margin-top: 24px;
+    
+}
+
+.shortcut {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.shortcut svg {
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    border: 2px solid #ffe066;
+    border-radius: 20%;
+    transition: background-color 0.01s ease;
+    
+}
+
+.shortcut svg:hover {
+    background-color: #f59f00;
+}
+
+.shortcut a {
+    font-size: 24px;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.post {
+    margin: 12px 128px 12px 128px;
+    padding: 16px;
+    border: 2px solid #ffe066;
+
+}
+
+.post h1 {
+    margin-bottom: 12px;
+}
+
+
+.personal {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    margin: 24px;
+}
+
+.dice-icon {
+    width: 128px;
+    height: 128px;
+    margin-left: 128px;
+}
+.dice-icon-credit {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 16px;
+    
+}
+
+.credit-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.latest-activity {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+
+.balance-activity {
+    border: 2px solid #fcc419;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 8px 4px;
+    transition: background-color 0.01s ease;
+    padding: 8px;
+
+}
+
+.balance-activity:hover , .balance-activity:hover *{
+    background-color: #f59f00;
+}
+
+.logo {
+    height: 128px;
+    width: 128px;
+}
+
+.credit {
+    border: 2px solid #fcc419;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.loan-box {
+  
+    margin-bottom: 8px;
+    padding: 12px 36px;
+    border: 2px solid #fcc419;
+    border-radius: 8px;
+    transition: background-color 0.01s ease;
+}
+
+.loan-box:hover , .loan-box:hover *{
+    background-color: #f59f00;
+}
+
+.loan-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.credit-desc {
+    font-size: 24px;
+    text-align: center;
+}
+
+.loan-info2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.loan-info2:nth-child(odd),.loan-info2:nth-child(odd) *{
+    background-color: #fff3bf;
+}
+
+.loan-info3 {
+    display: block;
+    text-align: center;
+
+}
+
+.loan-info3 a {
+    display: block;
+    margin-top: 24px;
+    background-color: #fff3bf;
+    transition: background-color 0.01s ease;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 8px;
+}
+
+
+.loan-info3 a:hover {
+    background-color: #f59f00;
+}
+
+.header-payment {
+    font-size: 24px;
+    text-align: center;
+    margin: 36px;
+}
+
+.payments {
+
+    padding: 8px 32px;
+    gap: 32px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.right-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.payment {
+    border: 2px solid #fcc419;
+    transition: background-color 0.001s ease;
+    border-radius: 8px;
+    padding: 16px;
+    width: 150px;
+    height: 200px;
+}
+
+
+.payment:hover:not(.payment-icons),
+.payment:hover *:not(.payment-icons) {
+    background-color: #f59f00;
+}
+
+.payment-name {
+    font-size: 24px;
+}
+
+.payment-icons {
+    display: inline-block;
+    padding: 11px;
+    width: 48px;
+    height: 48px;
+    border: 2px solid #fcc419;
+    border-radius: 50%;
+    
+}
+
+.download-mobile-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 16px;
+}
+
+.app-banner {
+    display: inline-block;
+    height: auto;
+}
+
+.app-banner img {
+    background-size: auto;
+    display: block;
+    height: auto;
+    flex: 1;
+    max-width: 100%;
+}
+
+
+.app-infos img {
+    max-width: 50%;
+    height: auto;
+ }
+
+.app-infos h1 {
+    font-size: 64px;
+}
+
+.app-infos {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    
+}
+
+.app-infos * {
+    margin-bottom: 16px;
+
+}
+
+.footer {
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+
+.footer-lists {
+    list-style-type: none;
+    line-height: 1.6;
+}
+
+.blog {
+    display: grid;
+    grid-template-rows: 2fr 8fr;
+}
+
+.money-icon {
+    height: 36px;
+    width: 36px;
+}
+
+.balance-icon {
+    height: 64px;
+    width: 64px;
+    
+}
+
+.footer-header {
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+
+.footer-links {
+    margin: 24px;
+    font-size: 24px;
+    
+}
+
+.footer-link {
+
+    text-decoration: none;
+    
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-link a {
+    text-decoration: none;
+}
